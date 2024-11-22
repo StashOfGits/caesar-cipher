@@ -18,25 +18,62 @@
                 </div>
                 <form id="controls">
                     <div class="row">
-
-                    </div>
-                    <div class="column">
-
+                        <div>
+                            <input type="radio" name="code" id="encode" value="encode" checked="checked" /><label
+                                for="encode">Encode</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="code" id="decode" value="decode" /><label
+                                for="decode">Decode</label>
+                        </div>
                     </div>
                     <div class="row">
-
+                        <div>
+                            <div>
+                                <span>Shift Key: </span><input type="text" name="mod" id="mod-input" maxlength="4" size="4" value="36" />
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <span>Modulo: </span><input type="text" name="mod" id="mod-input" maxlength="4" size="4" value="36" />
+                            </div>                           
+                        </div>
                     </div>
+                    <div class="column">
+                        <div><span>Alphabet</span></div>
+                        <div>
+                            <input type="text" name="alphabet" id="alphabet-input" value="abcdefghijklmnopqrstuvwxyz0123456789" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <div>Letter Case</div>
+                            <select name="letter-case" id="letter-case">
+                                <option value="1">Maintain Case</option>
+                                <option value="2">Lower Case</option>
+                                <option value="3">Upper Case</option>
+                            </select>
+                        </div>
+                        <div>
+                            <div>Foreign Chars</div>
+                            <select name="foreign-chars" id="foreign-chars">
+                                <option value="1">Remove</option>
+                                <option value="2">Ignore</option>
+                            </select>
+                        </div>
+                    </div>
+                    <input type="submit" name="submit" id="submit" value="Submit" />
                 </form>
-                <div class="box">
-                    <div class="heading">
-                        <h2 id="heading-input">Plaintext</h2>
-                    </div>
-                    <p id="status"></p>
+            </div>
+            <div class="box">
+                <div class="heading">
+                    <h2 id="heading-input">Plaintext</h2>
                 </div>
-                <div class="box">
-                    <div class="heading">
-                        <h2 id="heading-input">Ciphertext</h2>
-                    </div>
+                <p id="status"></p>
+            </div>
+            <div class="box">
+                <div class="heading">
+                    <h2 id="heading-input">Ciphertext</h2>
                 </div>
             </div>
         </div>
@@ -44,7 +81,6 @@
     </div>
 
 </body>
-
 
 
 </html>
