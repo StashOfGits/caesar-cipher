@@ -67,7 +67,7 @@ form.addEventListener("submit", (event) => {
 
     function removeForeignChars(input) {
         //Regular Expression will catch non-number and non-digit characters and then replace with empty string
-        const regex = /[^a-zA-Z0-9 ]/g;
+        const regex = /[^a-zA-Z0-9]/g;
         return input.replace(regex, "");
        
     }
